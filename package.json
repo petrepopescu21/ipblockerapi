@@ -12,6 +12,7 @@
     "axios": "^0.16.2",
     "azure-storage": "^2.2.1",
     "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
     "koa-router": "^7.2.1"
   },
   "devDependencies": {
