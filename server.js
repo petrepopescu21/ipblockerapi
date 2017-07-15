@@ -9,7 +9,8 @@ const koaBody = require('koa-body');
 const app = new Koa()
 const router = require('./router')
 
-app.use(koaBody());
+app.use(koaBody({strict:false}))
+
 //Check key
 app.use(async (ctx,next)=>{
     if (ctx.req.headers.secret == process.env.SECRET)
@@ -17,7 +18,5 @@ app.use(async (ctx,next)=>{
     else ctx.body = "Bye"
 })
 
-
-app.use(router.routes());
-
+app.use(router.routes())
 app.listen(process.env.PORT)
