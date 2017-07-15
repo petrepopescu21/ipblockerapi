@@ -1,0 +1,24 @@
+{
+  "name": "ipblockerapi",
+  "version": "1.0.0",
+  "description": "Daniel's IP Blocker API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petre Popescu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "azure-storage": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}
